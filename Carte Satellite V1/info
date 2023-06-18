@@ -1,0 +1,169 @@
+{
+  "uuid": "b341c1592d58cbdaeb401df75a42094c",
+  "path": "Offline/Carte%20Satellite%20V1",
+  "name": "Carte Satellite V1",
+  "content": "",
+  "created_at": "2023-02-24 22:55:47",
+  "updated_at": "2023-03-11 16:48:57",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "723df227ac17661789bd7aa53202bcfc",
+      "title": "Carte Satellite V1 Schema",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "fa5146c3ede94692915f685923c4bbf1": 1,
+        "092d6758c344458697cf67c378e681f3": 1,
+        "165c79e338fd4695b6e566269e9997d8": 9,
+        "1cedfdf8160c4add9c6ad05cb71e8714": 1,
+        "48346db8b6a942c5876d3a5470218fdd": 1,
+        "7a9a1a739f81490290be601b392c92fe": 1,
+        "89026c0e23ca49dcb85d26a1d0805b33": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "330u",
+          1,
+          "CAP-D8.0×F3.5",
+          "C3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "a9851cb1389b46d6ae905df8d90c7f73",
+            "uuid": "1cedfdf8160c4add9c6ad05cb71e8714"
+          }
+        ],
+        [
+          "2.2u",
+          1,
+          "C0805",
+          "C11",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "2ee8eb13a0124a108e622ce40c0c25a8",
+            "uuid": "89026c0e23ca49dcb85d26a1d0805b33"
+          }
+        ],
+        [
+          "BH254V-10P",
+          1,
+          "IDC-TH_10P-P2.54-V-R2-C5-S2.54",
+          "CN4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C492442",
+            "BOM_Manufacturer": "XFCN(兴飞)",
+            "BOM_Manufacturer Part": "BH254V-10P",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1911a4fd210d48b8a7ea126c5794a5fc",
+            "uuid": "fa5146c3ede94692915f685923c4bbf1"
+          }
+        ],
+        [
+          "Dupont 3Pin",
+          9,
+          "DUPONT_3PTS",
+          "PWM,SERVO1,SERVO2,SERVO3,SERVO4,SERVO5,SERVO6,SERVO7,SERVO8",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "68e7b315f0af414697963e1a27371e2f",
+            "uuid": "165c79e338fd4695b6e566269e9997d8"
+          }
+        ],
+        [
+          "XL-0805QFRC 粉色",
+          1,
+          "LED0805-RD",
+          "U1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C50804",
+            "BOM_Manufacturer": "null",
+            "BOM_Manufacturer Part": "XL-0805QFRC 粉色",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "a267edbe7c3c4a16b85fd51e936458d0",
+            "uuid": "48346db8b6a942c5876d3a5470218fdd"
+          }
+        ],
+        [
+          "300Ω",
+          1,
+          "R0603",
+          "U2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C4244645",
+            "BOM_Manufacturer": "Ohmite",
+            "BOM_Manufacturer Part": "ACPP0603 2K B",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "7a9a1a739f81490290be601b392c92fe"
+          }
+        ],
+        [
+          "bornier 2P",
+          1,
+          "BORNIER 2P",
+          "VIN",
+          {
+            "BOM_Manufacturer Part": "bornier",
+            "BOM_Supplier Part": "https://fr.aliexpress.com/item/10pcs-2-Poles-2-Pin-2-54mm-0-1-PCB-Universal-Screw-Terminal-Block-Connector-Free/32556311867.html?spm=a2g0s.12269583.0.0.52167213yanoYJ",
+            "BOM_Supplier": "",
+            "puuid": "f51d06ebdf854d07ba346a7b0ecea18c",
+            "uuid": "092d6758c344458697cf67c378e681f3"
+          }
+        ]
+      ],
+      "updateTime": 1678020047,
+      "createTime": 1677275747,
+      "histories": [],
+      "created_at": "2023-02-24 22:55:47",
+      "updated_at": "2023-03-05 13:40:47"
+    },
+    {
+      "uuid": "c628041d0bf2904477acf3146b1a7f74",
+      "puuid": "b341c1592d58cbdaeb401df75a42094c",
+      "title": "Carte Satellite V1 PCB",
+      "filename": "Carte Satellite V1 PCB.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "2ee8eb13a0124a108e622ce40c0c25a8": 1,
+        "a267edbe7c3c4a16b85fd51e936458d0": 1,
+        "398691f1f785460098bbe5ee6590333c": 1,
+        "a9851cb1389b46d6ae905df8d90c7f73": 1,
+        "1911a4fd210d48b8a7ea126c5794a5fc": 1,
+        "68e7b315f0af414697963e1a27371e2f": 9,
+        "f51d06ebdf854d07ba346a7b0ecea18c": 1
+      },
+      "BOM": [],
+      "updateTime": 1678549737,
+      "createTime": 1677276176,
+      "histories": [],
+      "created_at": "2023-02-24 23:02:56",
+      "updated_at": "2023-03-11 16:48:57"
+    }
+  ],
+  "sort": [],
+  "title": "Carte Satellite V1",
+  "foldername": "Carte Satellite V1",
+  "schfilename": "Carte Satellite V1.json",
+  "schfilemtime": 1678020048004
+}

@@ -1,0 +1,184 @@
+{
+  "uuid": "597bdca2bb30554ce89db37cf31c976c",
+  "path": "Offline/Controlleur%20Moteur%20v1",
+  "name": "Controlleur Moteur v1",
+  "content": "",
+  "created_at": "2022-10-10 19:56:04",
+  "updated_at": "2023-03-05 20:46:04",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "24946472cfe6a054c1c1336807fdf0b9",
+      "title": "Controlleur moteur V1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "71d60ba22299b5de3dc333bc44c47097": 1,
+        "43a1925cca2b4baa85f324394e6d7c21": 6,
+        "14ff344642ea4bd0a25b8bd1b018cd84": 1,
+        "e33cc1be9d5e4d929dda60b4eb023d72": 8,
+        "267c9d9f80ad4bce857efadd69d76d9f": 2
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "1N4007W",
+          8,
+          "SOD-123_L2.8-W1.8-LS3.7-RD",
+          "D1,D2,D3,D4,D5,D6,D7,D8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C328592",
+            "BOM_Manufacturer": "BLUE ROCKET",
+            "BOM_Manufacturer Part": "1N4007W",
+            "puuid": "60a676d313ae48718a81c380b73dfe4f",
+            "uuid": "e33cc1be9d5e4d929dda60b4eb023d72"
+          }
+        ],
+        [
+          "Con_dupont_2",
+          6,
+          "CON_DUPONT_2",
+          "ENA,ENB,IN1,IN2,OUT1,OUT2",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6feffbe1372b4203a60ba030ec4597c3",
+            "uuid": "43a1925cca2b4baa85f324394e6d7c21"
+          }
+        ],
+        [
+          "SolderJumper",
+          2,
+          "SOLDER-JUMPER-0603",
+          "ENABP,ENBBP",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "43be7e9ed601426db2f6049c6fa1f1e9",
+            "uuid": "267c9d9f80ad4bce857efadd69d76d9f"
+          }
+        ],
+        [
+          "L298N_C19922",
+          1,
+          "MULTIWATT-15_L19.6-W5.0-P1.27-L",
+          "U1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "STMicroelectronics",
+            "BOM_Manufacturer Part": "L298N",
+            "BOM_Supplier Part": "C19922",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "96bc7f9d70a04465a355eee581308041",
+            "uuid": "71d60ba22299b5de3dc333bc44c47097"
+          }
+        ],
+        [
+          "MINI L298N",
+          1,
+          "MINI-L298N",
+          "U5",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "c27b983a9d4c447f8e307c4ba809d191",
+            "uuid": "14ff344642ea4bd0a25b8bd1b018cd84"
+          }
+        ]
+      ],
+      "updateTime": 1665514238,
+      "createTime": 1665424565,
+      "histories": [],
+      "created_at": "2022-10-10 19:56:05",
+      "updated_at": "2022-10-11 20:50:38"
+    },
+    {
+      "uuid": "8e3b44fb13493138d6a995188bcc694a",
+      "puuid": "597bdca2bb30554ce89db37cf31c976c",
+      "title": "PCB_Controlleur moteur v1",
+      "filename": "PCB_Controlleur moteur v1.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "60a676d313ae48718a81c380b73dfe4f": 8,
+        "6feffbe1372b4203a60ba030ec4597c3": 2,
+        "96bc7f9d70a04465a355eee581308041": 1,
+        "c27b983a9d4c447f8e307c4ba809d191": 1
+      },
+      "BOM": [],
+      "updateTime": 1665435502,
+      "createTime": 1665425028,
+      "histories": [],
+      "created_at": "2022-10-10 20:03:48",
+      "updated_at": "2022-10-10 22:58:22"
+    },
+    {
+      "uuid": "127fc844dc4eaf783da9ca1b5d393ce0",
+      "puuid": "597bdca2bb30554ce89db37cf31c976c",
+      "title": "PCB_Controlleur moteur v1 Rev 2.0",
+      "filename": "PCB_Controlleur moteur v1 Rev 2.0.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "60a676d313ae48718a81c380b73dfe4f": 8,
+        "6feffbe1372b4203a60ba030ec4597c3": 2,
+        "96bc7f9d70a04465a355eee581308041": 1,
+        "c27b983a9d4c447f8e307c4ba809d191": 1,
+        "43be7e9ed601426db2f6049c6fa1f1e9": 2
+      },
+      "BOM": [],
+      "updateTime": 1665516147,
+      "createTime": 1665435472,
+      "histories": [],
+      "created_at": "2022-10-10 22:57:52",
+      "updated_at": "2022-10-11 21:22:27"
+    },
+    {
+      "uuid": "aea862982b2d7c7ab5281acf87cba806",
+      "puuid": "597bdca2bb30554ce89db37cf31c976c",
+      "title": "PCB_Controlleur moteur v1 Rev 3.0",
+      "filename": "PCB_Controlleur moteur v1 Rev 3.0.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "43be7e9ed601426db2f6049c6fa1f1e9": 4,
+        "60a676d313ae48718a81c380b73dfe4f": 8,
+        "c27b983a9d4c447f8e307c4ba809d191": 1,
+        "6feffbe1372b4203a60ba030ec4597c3": 2,
+        "96bc7f9d70a04465a355eee581308041": 1
+      },
+      "BOM": [],
+      "updateTime": 1665605092,
+      "createTime": 1665515624,
+      "histories": [],
+      "created_at": "2022-10-11 21:13:44",
+      "updated_at": "2022-10-12 22:04:52"
+    }
+  ],
+  "sort": [],
+  "title": "Controlleur Moteur v1",
+  "foldername": "Controlleur Moteur v1",
+  "schfilename": "Controlleur Moteur v1.json",
+  "schfilemtime": 1665514238477
+}

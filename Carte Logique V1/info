@@ -1,0 +1,327 @@
+{
+  "uuid": "bde33962b3a93657c09ab50d37c05f40",
+  "path": "Offline/Carte%20Logique%20V1",
+  "name": "Carte Logique V1",
+  "content": "",
+  "created_at": "2023-03-01 20:52:20",
+  "updated_at": "2023-03-11 16:49:19",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "8717873d0c40b16dfa1c79ce9dcc97de",
+      "title": "Carte Logique V1 Schema",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "c123e57cb4494b0798e5311a63a3e190": 1,
+        "43a1925cca2b4baa85f324394e6d7c21": 3,
+        "da85efb77378462aaaa3d5ff7db1c1dd": 2,
+        "4c7947c44e34402fb0b9fe06827fcac8": 1,
+        "1e2e448d24d5460b807d9f5ed77217ef": 1,
+        "9bc6bab7538d4879affdcc84dec683c6": 1,
+        "91e5148e42cd4da5add5b646bbb48d9c": 16,
+        "9dcf105ab79748a88da492b869bab99f": 1,
+        "1379f5e418064a1b9e3acc21f728f7f0": 1,
+        "fa5146c3ede94692915f685923c4bbf1": 4,
+        "89026c0e23ca49dcb85d26a1d0805b33": 4,
+        "98eb117920e0441696101b19803a0453": 4,
+        "8b220be79a8c478fabb9d0ea26120b97": 1,
+        "04d24c516082452aa6fb1c284f54a4f2": 1,
+        "e6983884965c473dbb76f08203f4df24": 7,
+        "2bdd54d54db8456190a25ba6b1a432cb": 2,
+        "9a93a986a521402dbc4eb50a1884b9dc": 3,
+        "ca24d3a9a9db4013aa3d5c71a010e71a": 9
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "CONNECTOR_DUPONT_1x16",
+          2,
+          "DUPONT_16",
+          "2,4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "f1fadb4af5734400bdbeb61f6d6e4537",
+            "uuid": "2bdd54d54db8456190a25ba6b1a432cb"
+          }
+        ],
+        [
+          "Con_dupont_2",
+          3,
+          "CON_DUPONT_2",
+          "5V_ARDUINO,12V_ARDUINO,MANETTE",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6feffbe1372b4203a60ba030ec4597c3",
+            "uuid": "43a1925cca2b4baa85f324394e6d7c21"
+          }
+        ],
+        [
+          "BUZZER 12MM NO GEN",
+          1,
+          "BUZZER-12MM-NS",
+          "BUZZER",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "582972fdd23e48558fc08dfc1e7dbf7a",
+            "uuid": "c123e57cb4494b0798e5311a63a3e190"
+          }
+        ],
+        [
+          "2.2u",
+          4,
+          "C0805",
+          "C11,C12,C13,C14",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "2ee8eb13a0124a108e622ce40c0c25a8",
+            "uuid": "89026c0e23ca49dcb85d26a1d0805b33"
+          }
+        ],
+        [
+          "BH254V-10P",
+          4,
+          "IDC-TH_10P-P2.54-V-R2-C5-S2.54",
+          "CN1,CN2,CN3,CN4",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C492442",
+            "BOM_Manufacturer": "XFCN(兴飞)",
+            "BOM_Manufacturer Part": "BH254V-10P",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1911a4fd210d48b8a7ea126c5794a5fc",
+            "uuid": "fa5146c3ede94692915f685923c4bbf1"
+          }
+        ],
+        [
+          "1N4007",
+          2,
+          "DO-41_BD2.4-L4.7-P8.70-D0.9-RD",
+          "D1,D10",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "SEMTECH",
+            "BOM_Manufacturer Part": "1N4007",
+            "BOM_Supplier Part": "C106903",
+            "puuid": "c2803222ad4b48fb94db0de548a6280a",
+            "uuid": "da85efb77378462aaaa3d5ff7db1c1dd"
+          }
+        ],
+        [
+          "1125R-4P",
+          3,
+          "HW4-2.0-90D",
+          "J2,J3,J4",
+          {
+            "BOM_Manufacturer Part": "1125R-4P",
+            "puuid": "41b509b7b56e46dc87a71ceb3b7434ae",
+            "uuid": "9a93a986a521402dbc4eb50a1884b9dc"
+          }
+        ],
+        [
+          "220Ω",
+          16,
+          "L0603",
+          "L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11,L12,L13,L14,L15,L16",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "muRata(村田)",
+            "BOM_Manufacturer Part": "BLM18SG221TN1D",
+            "BOM_Supplier Part": "C88988",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f261cf72cb1479ca32177c31156ede3",
+            "uuid": "91e5148e42cd4da5add5b646bbb48d9c"
+          }
+        ],
+        [
+          "WIRELESS-NRF24L01-PA-EXT",
+          1,
+          "WIRELESS-NRF24L01-PA-EXT",
+          "M1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "b196f6592d6b4e5ab9027f198724faf1",
+            "uuid": "1379f5e418064a1b9e3acc21f728f7f0"
+          }
+        ],
+        [
+          "ARDUINO-MEGA-PRO",
+          1,
+          "ARDUINO-MEGA-PRO-MINI",
+          "MASTER",
+          {
+            "BOM_Manufacturer Part": "ARDUINO MEGA 2560 PRO EMBED",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "e4770559a71e4184bba9d8cfc9007ea8",
+            "uuid": "4c7947c44e34402fb0b9fe06827fcac8"
+          }
+        ],
+        [
+          "1K",
+          4,
+          "TROUGH HOLE RESISTOR 12MM",
+          "R1,R2,R3,R17",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "d652b92051bf4dc38b605237a8614b3d",
+            "uuid": "98eb117920e0441696101b19803a0453"
+          }
+        ],
+        [
+          "10kΩ",
+          7,
+          "R0603",
+          "R4,R11,R12,R13,R14,R15,R16",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "Sunlord(顺络)",
+            "BOM_Manufacturer Part": "SDNT1608X103J3450HTF",
+            "BOM_Supplier Part": "C43113",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "e6983884965c473dbb76f08203f4df24"
+          }
+        ],
+        [
+          "GY-273",
+          1,
+          "GY-273",
+          "U1",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "GY-273",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "2c5f939b5c4c45b5aba7e2c2c8378af0",
+            "uuid": "04d24c516082452aa6fb1c284f54a4f2"
+          }
+        ],
+        [
+          "HC05 TH",
+          1,
+          "HC05 TH",
+          "U4",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6f45b57c3bd147c2bcee62c777115bdd",
+            "uuid": "8b220be79a8c478fabb9d0ea26120b97"
+          }
+        ],
+        [
+          "TXS0108EPWR",
+          1,
+          "TSSOP-20_L6.5-W4.4-P0.65-LS6.4-BL",
+          "U9",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "TI(德州仪器)",
+            "BOM_Manufacturer Part": "TXS0108EPWR",
+            "BOM_Supplier Part": "C17206",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1586800a83194e228c6527ad76c86945",
+            "uuid": "9dcf105ab79748a88da492b869bab99f"
+          }
+        ],
+        [
+          "ARDUINO USB HOST SHIELD MINI TOP",
+          1,
+          "ARDUINO USB HOST SHIELD MINI - TOP",
+          "U10",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "77fc0f19314845249259380d6f96fc02",
+            "uuid": "1e2e448d24d5460b807d9f5ed77217ef"
+          }
+        ],
+        [
+          "PCA9685PW,118",
+          1,
+          "TSSOP-28_L9.7-W4.4-P0.65-LS6.4-TL",
+          "U14",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C2678753",
+            "BOM_Manufacturer": "NXP(恩智浦)",
+            "BOM_Manufacturer Part": "PCA9685PW,118",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "c6ada39664f5473e9a8f5c3f35fc43ae",
+            "uuid": "9bc6bab7538d4879affdcc84dec683c6"
+          }
+        ]
+      ],
+      "updateTime": 1677970340,
+      "createTime": 1656931531,
+      "histories": [],
+      "created_at": "2022-07-04 12:45:31",
+      "updated_at": "2023-03-04 23:52:20"
+    },
+    {
+      "uuid": "1fb1be5eebf1540072a8b10a98ec5873",
+      "puuid": "bde33962b3a93657c09ab50d37c05f40",
+      "title": "Carte Logique V1 PCB",
+      "filename": "Carte Logique V1 PCB.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "77fc0f19314845249259380d6f96fc02": 1,
+        "f1fadb4af5734400bdbeb61f6d6e4537": 2,
+        "1586800a83194e228c6527ad76c86945": 1,
+        "2ee8eb13a0124a108e622ce40c0c25a8": 4,
+        "c39ef29e316d42dcb975a256dc98c005": 9,
+        "c6ada39664f5473e9a8f5c3f35fc43ae": 1,
+        "398691f1f785460098bbe5ee6590333c": 7,
+        "1f261cf72cb1479ca32177c31156ede3": 16,
+        "582972fdd23e48558fc08dfc1e7dbf7a": 1,
+        "6feffbe1372b4203a60ba030ec4597c3": 3,
+        "e4770559a71e4184bba9d8cfc9007ea8": 1,
+        "6f45b57c3bd147c2bcee62c777115bdd": 1,
+        "2c5f939b5c4c45b5aba7e2c2c8378af0": 1,
+        "d652b92051bf4dc38b605237a8614b3d": 4,
+        "b196f6592d6b4e5ab9027f198724faf1": 1,
+        "41b509b7b56e46dc87a71ceb3b7434ae": 3,
+        "c2803222ad4b48fb94db0de548a6280a": 2,
+        "1911a4fd210d48b8a7ea126c5794a5fc": 4
+      },
+      "BOM": [],
+      "updateTime": 1678549759,
+      "createTime": 1677700404,
+      "histories": [],
+      "created_at": "2023-03-01 20:53:24",
+      "updated_at": "2023-03-11 16:49:19"
+    }
+  ],
+  "sort": [
+    "9ee090c4b398d0e07cb862c31e82a1e0",
+    "d32afa2c0ac3fdfedfcceb353e34e4e9"
+  ],
+  "title": "Carte Logique V1",
+  "foldername": "Carte Logique V1",
+  "schfilename": "Carte Logique V1.json",
+  "schfilemtime": 1677970340861
+}

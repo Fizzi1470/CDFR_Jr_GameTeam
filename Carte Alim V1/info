@@ -1,0 +1,387 @@
+{
+  "path": "Offline/Carte%20Alim%20V1",
+  "foldername": "Carte Alim V1",
+  "name": "Carte Alim V1",
+  "title": "Carte Alim V1",
+  "uuid": "0c12bc2957588f10e59197c2dd6ea2af",
+  "created_at": "2023-03-02 19:32:55",
+  "updated_at": "2023-03-11 16:49:52",
+  "documents": [
+    {
+      "uuid": "9ee090c4b398d0e07cb862c31e82a1e0",
+      "title": "Carte Alim V1 Schema",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "updateTime": 1677946069,
+      "createTime": 1677700368,
+      "histories": [],
+      "created_at": "2023-03-01 20:52:48",
+      "updated_at": "2023-03-04 17:07:49",
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "CONNECTOR_DUPONT_1x16",
+          2,
+          "DUPONT_16",
+          "1,3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "f1fadb4af5734400bdbeb61f6d6e4537",
+            "uuid": "2bdd54d54db8456190a25ba6b1a432cb"
+          }
+        ],
+        [
+          "bornier 2P",
+          2,
+          "BORNIER 2P",
+          "5V_SERVO,6V_SERVO",
+          {
+            "BOM_Manufacturer Part": "bornier",
+            "BOM_Supplier Part": "https://fr.aliexpress.com/item/10pcs-2-Poles-2-Pin-2-54mm-0-1-PCB-Universal-Screw-Terminal-Block-Connector-Free/32556311867.html?spm=a2g0s.12269583.0.0.52167213yanoYJ",
+            "BOM_Supplier": "",
+            "puuid": "f51d06ebdf854d07ba346a7b0ecea18c",
+            "uuid": "092d6758c344458697cf67c378e681f3"
+          }
+        ],
+        [
+          "Con_dupont_2",
+          9,
+          "CON_DUPONT_2",
+          "12V_1,12V_2,12V_3,12V_4,12V_5,12V_6,12V_7,12V_8,BATT_LOGIQUE",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6feffbe1372b4203a60ba030ec4597c3",
+            "uuid": "43a1925cca2b4baa85f324394e6d7c21"
+          }
+        ],
+        [
+          "Dupont 3Pin",
+          2,
+          "DUPONT_3PTS",
+          "ALIM_5V,ESTOP",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "68e7b315f0af414697963e1a27371e2f",
+            "uuid": "165c79e338fd4695b6e566269e9997d8"
+          }
+        ],
+        [
+          "2.2u",
+          5,
+          "C0805",
+          "C1,C6,C7,C8,C9",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "2ee8eb13a0124a108e622ce40c0c25a8",
+            "uuid": "89026c0e23ca49dcb85d26a1d0805b33"
+          }
+        ],
+        [
+          "220uF",
+          5,
+          "CAP-SMD_BD10.0-L10.3-W10.3-FD",
+          "C2,C3,C4,C5,C10",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C178549",
+            "BOM_Manufacturer": "PANASONIC(松下)",
+            "BOM_Manufacturer Part": "EEEFK1H221P",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "d8f8382978a7446f8e8f71c956b0d192",
+            "uuid": "8202cb5e9c094f5d95050271bf28c85b"
+          }
+        ],
+        [
+          "SM4003PL-TP",
+          7,
+          "SOD-123FL_L2.8-W1.7-LS3.6-RD",
+          "D3,D4,D5,D6,D7,D8,D9",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C725472",
+            "BOM_Manufacturer": "MCC(美微科)",
+            "BOM_Manufacturer Part": "SM4003PL-TP",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "5f16423875b0423cb598c64835c413ac",
+            "uuid": "dc209b8793a84fc7a711693ef4c81170"
+          }
+        ],
+        [
+          "3557-2",
+          1,
+          "3557-2",
+          "J1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "147ef8baf23944eabc08aefec56366d9",
+            "uuid": "b0059b709d294b30839e0be2b3e68ab7"
+          }
+        ],
+        [
+          "220Ω",
+          1,
+          "L0603",
+          "L17",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "muRata(村田)",
+            "BOM_Manufacturer Part": "BLM18SG221TN1D",
+            "BOM_Supplier Part": "C88988",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f261cf72cb1479ca32177c31156ede3",
+            "uuid": "91e5148e42cd4da5add5b646bbb48d9c"
+          }
+        ],
+        [
+          "THL_20WI",
+          1,
+          "THL 20WI",
+          "P1",
+          {
+            "BOM_Manufacturer": "Traco",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "eb3b57e4552545a49f886fcca834a6f9",
+            "uuid": "6fb046d6ef3244fd9fb6675b07a3c6e0"
+          }
+        ],
+        [
+          "KF350-3.5mm",
+          4,
+          "KF350-2P",
+          "P2,P3,P4,P5",
+          {
+            "BOM_Supplier Part": "C8445",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ReliaPro",
+            "BOM_Manufacturer Part": "WJ2EDGVC-5.08-2P",
+            "puuid": "a8de5ea6f4644386a3e55c735b22c2cc",
+            "uuid": "96e3c592e66041e9a029b428d420d4f6"
+          }
+        ],
+        [
+          "1K",
+          2,
+          "TROUGH HOLE RESISTOR 12MM",
+          "R5,R6",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "d652b92051bf4dc38b605237a8614b3d",
+            "uuid": "98eb117920e0441696101b19803a0453"
+          }
+        ],
+        [
+          "734Ω",
+          1,
+          "R0603",
+          "R7",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C153382",
+            "BOM_Manufacturer": "EVER OHMS(天二科技)",
+            "BOM_Manufacturer Part": "TR0603D383KP0515",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "caca1e17cdf2421cb3a6482a7468497f"
+          }
+        ],
+        [
+          "23.3kΩ",
+          1,
+          "R0603",
+          "R8",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "UNI-ROYAL(厚声)",
+            "BOM_Manufacturer Part": "0603WAF2322T5E",
+            "BOM_Supplier Part": "C23346",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "a58752aad3eab24d35e57fc5cdc69a7e"
+          }
+        ],
+        [
+          "14.3K",
+          1,
+          "R0603",
+          "R9",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C227592",
+            "BOM_Manufacturer": "YAGEO(国巨)",
+            "BOM_Manufacturer Part": "AC0603FR-0714K3L",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "109dbcda799a4cc4b7e223012dff5c42"
+          }
+        ],
+        [
+          "21kΩ",
+          1,
+          "R0603",
+          "R10",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C365119",
+            "BOM_Manufacturer": "RESI(开步睿思）",
+            "BOM_Manufacturer Part": "HPCR0603F21K0K9",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "398691f1f785460098bbe5ee6590333c",
+            "uuid": "88d06594dcb541f9897eac936ebf8b19"
+          }
+        ],
+        [
+          "XT60-M",
+          1,
+          "XT60-M",
+          "SWITCH_ALIM_BOARD",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C2918078",
+            "BOM_Manufacturer Part": "XT60UPB-M",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "e8d9eae69ed84cb8a56365a160c06b9b",
+            "uuid": "251a620a749e42ee8a2eee8d915fc3ca"
+          }
+        ],
+        [
+          "PTN78020WAD",
+          4,
+          "TI-EUK7_V",
+          "U2,U3,U6,U7",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "382b7268a27e4538abfcd11e1ff3dd4f",
+            "uuid": "4bf56f42b6454805a89a0162a72425a4"
+          }
+        ],
+        [
+          "DMG2302UK-7-ES",
+          7,
+          "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+          "U8,U12,U15,U16,U17,U18,U19",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C5224188",
+            "BOM_Manufacturer": "ElecSuper(静芯微）",
+            "BOM_Manufacturer Part": "DMG2302UK-7-ES",
+            "puuid": "bade90667a6e4731855e9a223387b8a6",
+            "uuid": "d432f700fbc14cc9b42706a980d9dc05"
+          }
+        ],
+        [
+          "MINI L298N",
+          2,
+          "MINI-L298N",
+          "U13,U25",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "c27b983a9d4c447f8e307c4ba809d191",
+            "uuid": "14ff344642ea4bd0a25b8bd1b018cd84"
+          }
+        ],
+        [
+          "TB67H451FNG,EL",
+          4,
+          "HSOP-8_L5.0-W4.0-P1.27-LS6.2-BL-EP",
+          "U21,U22,U23,U24",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C1858375",
+            "BOM_Manufacturer": "TOSHIBA(东芝)",
+            "BOM_Manufacturer Part": "TB67H451FNG,EL",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "67628af0f2d54e8685cf3446e2ace674",
+            "uuid": "aa464baad9204dc1b06feaf3c7b9a7ec"
+          }
+        ]
+      ],
+      "components": {
+        "98eb117920e0441696101b19803a0453": 2,
+        "251a620a749e42ee8a2eee8d915fc3ca": 1,
+        "4bf56f42b6454805a89a0162a72425a4": 4,
+        "89026c0e23ca49dcb85d26a1d0805b33": 5,
+        "43a1925cca2b4baa85f324394e6d7c21": 9,
+        "88d06594dcb541f9897eac936ebf8b19": 1,
+        "caca1e17cdf2421cb3a6482a7468497f": 1,
+        "a58752aad3eab24d35e57fc5cdc69a7e": 1,
+        "109dbcda799a4cc4b7e223012dff5c42": 1,
+        "165c79e338fd4695b6e566269e9997d8": 2,
+        "b0059b709d294b30839e0be2b3e68ab7": 1,
+        "092d6758c344458697cf67c378e681f3": 2,
+        "dc209b8793a84fc7a711693ef4c81170": 7,
+        "6fb046d6ef3244fd9fb6675b07a3c6e0": 1,
+        "2bdd54d54db8456190a25ba6b1a432cb": 2,
+        "d432f700fbc14cc9b42706a980d9dc05": 7,
+        "8202cb5e9c094f5d95050271bf28c85b": 5,
+        "aa464baad9204dc1b06feaf3c7b9a7ec": 4,
+        "91e5148e42cd4da5add5b646bbb48d9c": 1,
+        "ca24d3a9a9db4013aa3d5c71a010e71a": 4,
+        "14ff344642ea4bd0a25b8bd1b018cd84": 2,
+        "96e3c592e66041e9a029b428d420d4f6": 4
+      }
+    },
+    {
+      "uuid": "7cd83df52792c1131d7f5f2c285cd0de",
+      "title": "Carte Alim V1 PCB",
+      "filename": "Carte Alim V1 PCB.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "updateTime": 1678549792,
+      "createTime": 1677702198,
+      "histories": [],
+      "created_at": "2023-03-01 21:23:18",
+      "updated_at": "2023-03-11 16:49:52",
+      "components": {
+        "6feffbe1372b4203a60ba030ec4597c3": 9,
+        "68e7b315f0af414697963e1a27371e2f": 2,
+        "e8d9eae69ed84cb8a56365a160c06b9b": 1,
+        "147ef8baf23944eabc08aefec56366d9": 1,
+        "eb3b57e4552545a49f886fcca834a6f9": 1,
+        "382b7268a27e4538abfcd11e1ff3dd4f": 4,
+        "a8de5ea6f4644386a3e55c735b22c2cc": 4,
+        "398691f1f785460098bbe5ee6590333c": 4,
+        "d652b92051bf4dc38b605237a8614b3d": 2,
+        "f1fadb4af5734400bdbeb61f6d6e4537": 2,
+        "c39ef29e316d42dcb975a256dc98c005": 4,
+        "f51d06ebdf854d07ba346a7b0ecea18c": 2,
+        "2ee8eb13a0124a108e622ce40c0c25a8": 4,
+        "5f16423875b0423cb598c64835c413ac": 7,
+        "bade90667a6e4731855e9a223387b8a6": 7,
+        "d8f8382978a7446f8e8f71c956b0d192": 5
+      }
+    }
+  ],
+  "content": "",
+  "stick": "",
+  "sort": [],
+  "schfilename": "Carte Logique V1.json",
+  "schfilemtime": 1677946069959
+}

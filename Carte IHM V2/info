@@ -1,0 +1,170 @@
+{
+  "uuid": "9040c3d9453b2a1eada842edd9dfa6e1",
+  "path": "Offline/Carte%20IHM%20V2",
+  "name": "Carte IHM V2",
+  "content": "",
+  "created_at": "2023-03-03 20:01:01",
+  "updated_at": "2023-03-11 16:50:48",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "406afdd411c7b91dfce4ad3996363e4f",
+      "title": "Carte IHM V2 Schema",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "fa5146c3ede94692915f685923c4bbf1": 1,
+        "18479f1c4d4749c5a4c4387846c5d657": 3,
+        "119a89a69c55481cb05f375a516892e9": 2,
+        "da9ef89018274fec8082f9217e2969af": 8,
+        "89026c0e23ca49dcb85d26a1d0805b33": 1,
+        "91e5148e42cd4da5add5b646bbb48d9c": 8,
+        "d17778d8629f4698ae0dbcc68643dccc": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "2.2u",
+          1,
+          "C0805",
+          "C1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "2ee8eb13a0124a108e622ce40c0c25a8",
+            "uuid": "89026c0e23ca49dcb85d26a1d0805b33"
+          }
+        ],
+        [
+          "BH254V-10P",
+          1,
+          "IDC-TH_10P-P2.54-V-R2-C5-S2.54",
+          "CN1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C492442",
+            "BOM_Manufacturer": "XFCN(兴飞)",
+            "BOM_Manufacturer Part": "BH254V-10P",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1911a4fd210d48b8a7ea126c5794a5fc",
+            "uuid": "fa5146c3ede94692915f685923c4bbf1"
+          }
+        ],
+        [
+          "LED",
+          8,
+          "LED-TH_LED-DP2-2LED-AMCC",
+          "D2,D3,D4,D5,D6,D7,D8,D9",
+          {
+            "BOM_Supplier": "Digi-Key",
+            "BOM_Manufacturer": "VccLite",
+            "BOM_Manufacturer Part": "5600",
+            "BOM_Supplier Part": "L20325-ND",
+            "puuid": "b049ac3cb9c44a60bc01d98db7c1c378",
+            "uuid": "da9ef89018274fec8082f9217e2969af"
+          }
+        ],
+        [
+          "K4-6×6_TH",
+          3,
+          "KEY-TH_4P-L6.0-W6.0-P4.50-LS6.5",
+          "KEY1,KEY2,KEY3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C136684",
+            "BOM_Manufacturer": "韩国韩荣",
+            "BOM_Manufacturer Part": "K2-1102DP-E4SW-04",
+            "puuid": "557c105168d444a992e25584f55bcbb2",
+            "uuid": "18479f1c4d4749c5a4c4387846c5d657"
+          }
+        ],
+        [
+          "220Ω",
+          8,
+          "L0603",
+          "L3,L4,L5,L6,L7,L8,L9,L10",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "muRata(村田)",
+            "BOM_Manufacturer Part": "BLM18SG221TN1D",
+            "BOM_Supplier Part": "C88988",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "1f261cf72cb1479ca32177c31156ede3",
+            "uuid": "91e5148e42cd4da5add5b646bbb48d9c"
+          }
+        ],
+        [
+          "74HC595",
+          1,
+          "74HC595",
+          "U1",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "4cf890e51a1647d4a2b6ee1ac7ca42b1",
+            "uuid": "d17778d8629f4698ae0dbcc68643dccc"
+          }
+        ],
+        [
+          "Slide Switch 2P2T",
+          2,
+          "SLIDE SWITCH 2P2T",
+          "U2,U13",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "69cc85f8d0754700b0c0a0605ef2e8cf",
+            "uuid": "119a89a69c55481cb05f375a516892e9"
+          }
+        ]
+      ],
+      "updateTime": 1677881090,
+      "createTime": 1677109433,
+      "histories": [],
+      "created_at": "2023-02-23 00:43:53",
+      "updated_at": "2023-03-03 23:04:50"
+    },
+    {
+      "uuid": "2e4d4189d256f57a289ac1ffad22cc99",
+      "title": "Carte IHM V2 PCB",
+      "filename": "Carte IHM V2 PCB.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "4cf890e51a1647d4a2b6ee1ac7ca42b1": 1,
+        "1911a4fd210d48b8a7ea126c5794a5fc": 1,
+        "2ee8eb13a0124a108e622ce40c0c25a8": 1,
+        "1f261cf72cb1479ca32177c31156ede3": 8,
+        "69cc85f8d0754700b0c0a0605ef2e8cf": 2,
+        "557c105168d444a992e25584f55bcbb2": 3,
+        "b049ac3cb9c44a60bc01d98db7c1c378": 8
+      },
+      "BOM": [],
+      "updateTime": 1678549848,
+      "createTime": 1677109521,
+      "histories": [],
+      "created_at": "2023-02-23 00:45:21",
+      "updated_at": "2023-03-11 16:50:48"
+    }
+  ],
+  "sort": [],
+  "title": "Carte IHM V2",
+  "foldername": "Carte IHM V2",
+  "schfilename": "Carte IHM V2.json",
+  "schfilemtime": 1678046140634
+}

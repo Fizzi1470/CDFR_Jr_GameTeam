@@ -1,0 +1,163 @@
+{
+  "uuid": "4ee51352ccfff056e377f29e064af6f6",
+  "path": "Offline/Carte%20Panier%20V1",
+  "name": "Carte Panier V1",
+  "content": "",
+  "created_at": "2023-03-04 22:40:46",
+  "updated_at": "2023-03-11 16:50:11",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "fa3caea876c4d139a20bef3d7957a2cb",
+      "title": "Carte Panier V1 Schema",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "7ef1e3a2d51f437095c2ccd016663f8c": 1,
+        "6099f8cb23bd42ec87175173b93fda86": 1,
+        "b0059b709d294b30839e0be2b3e68ab7": 1,
+        "251a620a749e42ee8a2eee8d915fc3ca": 1,
+        "2fecfd5c05cb42afa1ad834f3c16e1b5": 1,
+        "43a1925cca2b4baa85f324394e6d7c21": 4,
+        "e1351d38d0ea4147986bb80f8193052d": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Afficheurs",
+          1,
+          "GROVE-2MM-4PIN-I2C",
+          "AFFICHEUR",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "25c77e7067484d598848a46799da02a3",
+            "uuid": "2fecfd5c05cb42afa1ad834f3c16e1b5"
+          }
+        ],
+        [
+          "3557-2",
+          1,
+          "3557-2",
+          "J1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "147ef8baf23944eabc08aefec56366d9",
+            "uuid": "b0059b709d294b30839e0be2b3e68ab7"
+          }
+        ],
+        [
+          "Con_dupont_2",
+          4,
+          "CON_DUPONT_2",
+          "MOTEUR,MOTEUR1,RECEIVE,SEND",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "6feffbe1372b4203a60ba030ec4597c3",
+            "uuid": "43a1925cca2b4baa85f324394e6d7c21"
+          }
+        ],
+        [
+          "XL4005 DC-DC Module",
+          1,
+          "XL4005 DC-DC MODULE",
+          "P2",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "b6b9bb56097141b89e566ec5f5eb6671",
+            "uuid": "6099f8cb23bd42ec87175173b93fda86"
+          }
+        ],
+        [
+          "a determiner",
+          1,
+          "R_AXIAL-0.5",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "e46b9352a8354a20870bdcdcb288663a",
+            "uuid": "e1351d38d0ea4147986bb80f8193052d"
+          }
+        ],
+        [
+          "ARDUINO PRO MINI_1",
+          1,
+          "ARDUINOPROMINI_ARDUINO_PRO_MINI_1",
+          "U1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "ab9f7c712c334bd49c15c48d4d54f12d",
+            "uuid": "7ef1e3a2d51f437095c2ccd016663f8c"
+          }
+        ],
+        [
+          "XT60-M",
+          1,
+          "XT60-M",
+          "VIN1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C2918078",
+            "BOM_Manufacturer Part": "XT60UPB-M",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "e8d9eae69ed84cb8a56365a160c06b9b",
+            "uuid": "251a620a749e42ee8a2eee8d915fc3ca"
+          }
+        ]
+      ],
+      "updateTime": 1678045013,
+      "createTime": 1677966046,
+      "histories": [],
+      "created_at": "2023-03-04 22:40:46",
+      "updated_at": "2023-03-05 20:36:53"
+    },
+    {
+      "uuid": "1248cd98ae8aac6c7504670708803d41",
+      "puuid": "4ee51352ccfff056e377f29e064af6f6",
+      "title": "Carte Panier V1 PCB",
+      "filename": "Carte Panier V1 PCB.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "6feffbe1372b4203a60ba030ec4597c3": 4,
+        "25c77e7067484d598848a46799da02a3": 1,
+        "147ef8baf23944eabc08aefec56366d9": 1,
+        "b6b9bb56097141b89e566ec5f5eb6671": 1,
+        "e46b9352a8354a20870bdcdcb288663a": 1,
+        "ab9f7c712c334bd49c15c48d4d54f12d": 1,
+        "e8d9eae69ed84cb8a56365a160c06b9b": 1
+      },
+      "BOM": [],
+      "updateTime": 1678549811,
+      "createTime": 1677968357,
+      "histories": [],
+      "created_at": "2023-03-04 23:19:17",
+      "updated_at": "2023-03-11 16:50:11"
+    }
+  ],
+  "sort": [],
+  "title": "Carte Panier V1",
+  "foldername": "Carte Panier V1",
+  "schfilename": "Carte Panier V1.json",
+  "schfilemtime": 1678045013628
+}
