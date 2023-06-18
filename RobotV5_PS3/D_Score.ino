@@ -9,6 +9,7 @@ int chiffre;
 void gestion_score(){
   if(Serial3.available() != 0){
     chiffre = Serial3.read() - 48;
+    if (chiffre==-5) resettrigger=1;
     if (chiffre == 12){
       if (chiffre3 != -1 && score_max == 2){
         chiffre3 = -1;
@@ -36,7 +37,7 @@ void gestion_score(){
         Serial3.print(F(" = > "));Serial3.println(chiffre1);
       }
       if(chiffre3 != -1 && score_max == 2){
-        score = (chiffre3 * 10) + (chiffre2 * 1) + (chiffre1 * 10);
+        score = (chiffre3 * 1) + (chiffre2 * 10) + (chiffre1 * 100);
         afficheurs.showNumberDec(score, false);
         Serial3.println(score);
       }

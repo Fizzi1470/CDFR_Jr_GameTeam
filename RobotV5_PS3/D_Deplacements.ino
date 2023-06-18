@@ -4,28 +4,29 @@ int axe1a;
 int axe1r;
 int axe2a;
 int axe2r;
-int axeXprocess;
-int axeYprocess;
+float axeXprocess;
+float axeYprocess;
 float axeXadapte;
 float axeYadapte; 
 int axeCombine;
 int lecture_serie;
 float buffer_serie;
+float buffer_azimuth;
 float decalageAzimuth;
-/*
+
 void calibrer_azimuth(){
-  decalageAzimuth = azimuth;
+  decalageAzimuth = buffer_azimuth;
 }
 
 void gestion_magneto(){
   if (Serial1.available()){
     lecture_serie = Serial1.read()-48;
     if(lecture_serie == -1)buffer_serie = 0;
-    else if (lecture_serie == 10){azimuth = buffer_serie - decalageAzimuth;Serial.println(azimuth);}
+    else if (lecture_serie == 10){buffer_azimuth = buffer_serie; azimuth = buffer_azimuth - decalageAzimuth; /*Serial.print(azimuth);Serial.print(" ; "); Serial.println(decalageAzimuth);*/}
     else buffer_serie = (buffer_serie*10) + lecture_serie;
   } 
 }
-*/
+
 void gestion_deplacements(){
 if(deguisement == 0){
   // reception des valeurs de rotation et conversion en ordre moteur
@@ -58,10 +59,10 @@ if(deguisement == 0){
   //axeXadapte = axeX;
   //axeYadapte = axeY;
   
-  //if(mode_deplacement == 0) azimuth = -45;
-  if (turbine == 1) azimuth = 0;
-  else azimuth = -45;
-
+  if(mode_deplacement == 0){
+    if (turbine == 1) azimuth = 0;
+    else azimuth = -45;
+  }
     
   axeXprocess = axeXadapte*cos(radians(azimuth)) - axeYadapte*sin(radians(azimuth));
   axeYprocess = axeXadapte*sin(radians(azimuth)) + axeYadapte*cos(radians(azimuth));
@@ -141,14 +142,8 @@ if(deguisement == 0){
     analogWrite(12,0);
   }
 }
-/*
+
 void changer_mode(){
   mode_deplacement = !mode_deplacement;
-  if (mode_deplacement == 0){
-    if (type_manette == 0){Serial2.write(002);}
-    else {SwitchPro.setLedHomeOff();}
-  } else {
-    if (type_manette == 0){Serial2.write(001);}
-    else {SwitchPro.setLedHomeOn();}
-  }
-}*/
+  bargraph(3,mode_deplacement);
+}

@@ -22,6 +22,13 @@ int axeTourner;
 boolean mode_deplacement = mode_deplacement_defaut;
 float azimuth;
 void rien(){}//tout est dans le titre
+uint32_t timer_sequence_cerise;
+boolean cerise_avant;
+boolean cerise_arriere;
+boolean cerise_gauche;
+boolean cerise_droite;
+boolean sequence_cerise_en_cours;
+boolean sequence_cerises_prete;
 boolean sequence_prete;
 int sequence;
 byte identifiant_sequence;
@@ -33,20 +40,22 @@ void add_sequence(byte numero){sequence = (sequence*10) + numero;}
 uint32_t timer_sequence_principal;
 boolean turbine;
 boolean ancien_turbine;
+boolean reservoir;
+uint32_t timer_antiblocage_reservoir;
+boolean vidange;
+boolean bouton_cerise_presse;
+boolean maintient_L1;
+boolean resettrigger;
 
 uint32_t ancienT;
 
-void gestion_BAU(){
-  if (digitalRead(53) == 1) {BAU = 1; identifiant_sequence = 0; sequence_terminee = 1;sequence_prete = 0;sequence = 0;digitalWrite(13,0);}
-  else if (BAU != digitalRead(53)){BAU = 0;}
-}
-
 void setup() {
-  Serial.begin(115200);
-  Serial1.begin(115200);
-  Serial2.begin(57600);
-  Serial3.begin(38400);
+  Serial.begin(115200); // PC
+  Serial1.begin(115200); // Anexe (magnétomètre)
+  Serial2.begin(57600); // Manette filaire 
+  Serial3.begin(38400); // module BT 
   Wire.begin();
+  Wire.setWireTimeout(30000);
   pwm.begin();
   pwm.setOscillatorFrequency(27000000);
   pwm.setPWMFreq(50);
@@ -109,109 +118,56 @@ void setup() {
   afficheurs.setBrightness(0x0f);
   afficheurs.showNumberDec(8888);
 
+  bargraph(3,mode_deplacement);
+
   bras1_haut();
   bras2_haut();
   delay(500);
   bras1_milieu();
   bras2_milieu();
+
+  cerise_bras1_fermer();
+  cerise_bras2_fermer();
+
+  fermer_reservoir();
+  changer_position_antiblocage_reservoir();
+  changer_etat_deguisement();
+
+  afficheurs.showNumberDec(score_defaut);
   
   if (activer_watchdog == 1) wdt_enable(WDTO_1S);
   if (activer_watchdog == 2) wdt_enable(WDTO_2S);
 }
 
 void loop() {
-  if (digitalRead(A2) == 0) analogWrite(4, 127);
-  if (activer_watchdog == 1 || activer_watchdog == 2) wdt_reset();
+  if (resettrigger==1) digitalWrite(2,1); 
+  if (activer_watchdog > 0) wdt_reset();
   Usb.Task();
-  //Serial.println(micros() - ancienT);
-  //ancienT = micros(); 
+  int temps = micros() - ancienT;Serial.println(temps);ancienT = micros(); 
+
+  gestion_manette();
   
-  if (PS3.PS3Connected) {
-
-    if (PS3.getAnalogHat(RightHatX) > 127+DeadzoneR || PS3.getAnalogHat(RightHatX) < 127-DeadzoneR) {
-      if (PS3.getAnalogHat(RightHatX) > 127+DeadzoneR)  axeTourner = (round((PS3.getAnalogHat(RightHatX)-127.5)/5.1));
-      else                                              axeTourner = (round((PS3.getAnalogHat(RightHatX)-127.5)/5.1));
-    } else axeTourner = 0;
-    /*
-    if (PS3.getAnalogHat(RightHatY) > DeadzoneR || PS3.getAnalogHat(RightHatY) < -(DeadzoneR)) {
-      if (PS3.getAnalogHat(RightHatY) > DeadzoneR)  message = ((round(PS3.getAnalogHat(RightHatY)/69.6)*-1));
-      else                                                message = ((round(PS3.getAnalogHat(RightHatY)/66.6)*-1));
-    } else message = 0;
-    */
-    /* ===== Joystick Gauche (Left) ===== */
-
-    if (PS3.getAnalogHat(LeftHatX) > 127+DeadzoneL || PS3.getAnalogHat(LeftHatX) < 127-DeadzoneL) {
-      if (PS3.getAnalogHat(LeftHatX) > 127+DeadzoneL) axeX = (round((PS3.getAnalogHat(LeftHatX)-127.5)/5.1));
-      else                                            axeX = (round((PS3.getAnalogHat(LeftHatX)-127.5)/5.1));
-    } else axeX = 0;
-
-    if (PS3.getAnalogHat(LeftHatY) > 127+DeadzoneL || PS3.getAnalogHat(LeftHatY) < 127-DeadzoneL) {
-      if (PS3.getAnalogHat(LeftHatY) > 127+DeadzoneL) axeY = (round((PS3.getAnalogHat(LeftHatY)-127.5)/5.1))*-1;
-      else                                            axeY = (round((PS3.getAnalogHat(LeftHatY)-127.5)/5.1))*-1;
-    } else axeY = 0;
-
-    //Serial.print(axeTourner);Serial.print(";"); Serial.print(axeX);Serial.print(";");Serial.println(axeY);
-
-    if (PS3.getButtonPress(PS)) {
-      if (millis() - capture_timer > 1000) PS3.disconnect();
-    } else capture_timer = millis();
-
-    if (PS3.getButtonClick(PS))changer_etat_deguisement();
-
-    if (PS3.getButtonClick(LEFT))lancer_sequence(42);
-    if (PS3.getButtonClick(UP))lancer_sequence(1);
-    if (PS3.getButtonClick(RIGHT))lancer_sequence(12);
-    if (PS3.getButtonClick(DOWN))lancer_sequence(32);
-  
-    if (PS3.getButtonClick(START))augmenter_score();
-    if (PS3.getButtonClick(SELECT))diminuer_score();
-    
-    if (PS3.getButtonClick(CIRCLE))if (mode_sequence) add_sequence(1); else baie_droite(-1);
-    if (PS3.getButtonClick(CROSS))if (mode_sequence) add_sequence(3); else baie_arriere(-1);
-    if (PS3.getButtonClick(TRIANGLE))if (mode_sequence) add_sequence(2); else baie_avant(-1);
-    if (PS3.getButtonClick(SQUARE))if (mode_sequence) add_sequence(4); else baie_gauche(-1);
-
-    //if (PS3.getButtonClick(L1))rien();
-    if (PS3.getButtonPress(R1) && sequence_prete == 0){mode_sequence = 1;premier_relachement_bouton_sequence = 1;/*PS3.setRumbleOn(RumbleHigh);*/} else{ mode_sequence = 0;/*PS3.setRumbleOff();*/
-                                                                                                                                if (premier_relachement_bouton_sequence == 1){
-                                                                                                                                  if (sequence < 100 || sequence > 1000) sequence = 0;
-                                                                                                                                  else {sequence_prete = 1;timer_sequence_principal = millis();}}
-                                                                                                                                premier_relachement_bouton_sequence = 0;}
-  
-    if (PS3.getAnalogButton(R2) > 150){ if (ancien_turbine == turbine){changer_etat_aspiro();}}else ancien_turbine = turbine;
-    //if (PS3.getAnalogButton(L2) > 150)rien(); 
-
-    //if (PS3.getButtonClick(L3))rien();changer_mode();
-    //if (PS3.getButtonClick(R3))rien();calibrer_azimuth();
-    
-  }
-  else {
-    analogWrite(5,0);
-    analogWrite(6,0);
-    analogWrite(7,0);
-    analogWrite(8,0);
-    analogWrite(9,0);
-    analogWrite(10,0);
-    analogWrite(11,0);
-    analogWrite(12,0);
-    premiere_conexion = 1;
-  }   
-  
-  if(PS3.PS3Connected && premiere_conexion == 1){
-    PS3.setLedOn(LED1);
-    PS3.setLedOn(LED2);
-    PS3.setLedOn(LED3);
-    PS3.setLedOn(LED4);
-    premiere_conexion = 0;
-  }
-  
-  if (activer_watchdog == 1 || activer_watchdog == 2) wdt_reset();
+  if (activer_watchdog > 0) wdt_reset();
   Usb.Task();
-  
+  temps = micros() - ancienT;Serial.println(temps);ancienT = micros(); 
+
+  if(digitalRead(53) == 1 || deguisement == 1){ // Bouton d'arrêt d'urgence
+    sequence_terminee = 1;
+    identifiant_sequence = 0;
+    sequence = 0;
+    sequence_prete = 0;
+    digitalWrite(13, 0);
+    turbine = 0;
+  }
+
+  //gestion_vidange();
+  //gestion_IHM();
   gestion_deplacements();
-  //gestion_magneto();
+  if(mode_deplacement == 1) gestion_magneto();
   gestion_score();
+  if (sequence_cerise_en_cours == 1){gestion_sequences_cerises();}
   if (identifiant_sequence != 0){gestion_sequences();}
   if (sequence_prete == 1){gestion_sequences_principales();}
   if (deguisement == 1) {gestion_deguisement();}
+  if (reservoir == 1 && millis() - timer_antiblocage_reservoir > 500){changer_position_antiblocage_reservoir();timer_antiblocage_reservoir = millis();}
 }

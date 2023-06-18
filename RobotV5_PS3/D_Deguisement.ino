@@ -13,8 +13,6 @@ void changer_etat_deguisement(){
   } else {
     deguisement = 0;
     digitalWrite(3, 1);
-  }
-  if (deguisement == 0) {
     digitalWrite(33-deguisement1,0);
     digitalWrite(33-deguisement2,0);
   }
